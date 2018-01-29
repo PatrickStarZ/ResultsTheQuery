@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="学年"
+            android:textColor="@color/dimgray"
+            android:layout_marginLeft="16dp"/>
+
+        <org.angmarch.views.NiceSpinner
+            android:id="@+id/nice_spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="学期"
+            android:textColor="@color/dimgray"
+            android:layout_marginLeft="16dp"/>
+
+        <org.angmarch.views.NiceSpinner
+            android:id="@+id/nice_spinner2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"/>
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scoretype"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="16dp">
+
+        <RadioButton
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="有效成绩"
+            android:checked="true"
+            android:textColor="@color/dimgray"
+            android:id="@+id/yx_score" />
+
+        <RadioButton
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="原始成绩"
+            android:textColor="@color/dimgray"
+            android:id="@+id/ys_score" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rangen"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <RadioButton
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="入学以来"
+            android:textColor="@color/dimgray"
+            android:id="@+id/rxyl" />
+
+        <RadioButton
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="学年"
+            android:textColor="@color/dimgray"
+            android:id="@+id/xn" />
+
+        <RadioButton
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="学期"
+            android:checked="true"
+            android:textColor="@color/dimgray"
+            android:id="@+id/xq" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/coursetype"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical" >
+
+        <RadioButton
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="主修"
+            android:checked="true"
+            android:textColor="@color/dimgray"
+            android:id="@+id/required" />
+
+        <RadioButton
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="辅修"
+            android:textColor="@color/dimgray"
+            android:id="@+id/elective" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/inquiry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查询"/>
+
+
+</LinearLayout>
